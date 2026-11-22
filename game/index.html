@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight at the Marlow Museum — a stealth heist game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05070f;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #0a0d1a;
+  }
+  #help {
+    color: #8a93b8;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 12px 12px;
+    line-height: 1.5;
+  }
+  #help b { color: #e8e4d8; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <b>WASD / arrows</b> move &nbsp;·&nbsp; <b>click</b> walk there &nbsp;·&nbsp; <b>Shift</b> sneak
+    &nbsp;·&nbsp; <b>Q</b> smoke pellet &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; <b>R</b> restart<br>
+    Steal the Star of Marlow from the vault, then reach the green EXIT — before the alarm hits 100%.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
